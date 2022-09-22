@@ -1,0 +1,37 @@
+.postCommentForm {
+  margin-top: var(--space-12);
+}
+
+.postCommentInputWrapper {
+  align-items: center;
+  background: var(--color-gray1);
+  border-radius: 40px;
+  display: flex;
+  height: 40px;
+  padding: var(--space-16) 0 var(--space-16) var(--space-16);
+}
+
+.commentIcon {
+  fill: var(--color-weak-60);
+  flex: 1 0 auto;
+  height: 18px;
+  width: 18px;
+}
+
+.postCommentInput {
+  background: var(--color-gray1);
+  border: 0;
+  height: 40px;
+  outline: none;
+  padding: var(--space-16) 0 var(--space-16) var(--space-12);
+}
+
+.postCommentSubmitButton {
+  height: 40px;
+  width: 60px;
+}
+
+.postCommentSubmitButton:not(:disabled):focus svg,
+.postCommentSubmitButton:not(:disabled):hover svg {
+  fill: var(--color-primary-hover);
+}

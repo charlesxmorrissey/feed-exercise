@@ -1,0 +1,53 @@
+.feedWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.feedFooter,
+.feedHeader {
+  composes: layoutPadding from '/src/styles/shared.module.css';
+  align-items: center;
+  background-color: var(--color-light);
+  display: flex;
+  height: 60px;
+}
+
+.feedHeader {
+  border-bottom: 1px solid var(--color-border);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.feedHeaderLogo {
+  height: 38px;
+  width: 111px;
+}
+
+.feedContainer {
+  composes: layoutPadding from '/src/styles/shared.module.css';
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 76px auto var(--space-32);
+  width: 100%;
+}
+
+.feedContent {
+  max-width: var(--dimension-site-width);
+  width: 100%;
+}
+
+.feedFooter {
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .feedContainer {
+    margin-top: 92px;
+  }
+}

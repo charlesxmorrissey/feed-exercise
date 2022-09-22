@@ -1,0 +1,94 @@
+.postCard {
+  position: relative;
+}
+
+.postCardDefault {
+  composes: borderedCard from '/src/styles/shared.module.css';
+}
+
+.postCardComment {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-16) 0 var(--space-8);
+}
+
+.postCardComment:last-child {
+  padding-bottom: 0;
+}
+
+.postCardMenuButton {
+  composes: transitionHover from '/src/styles/shared.module.css';
+  color: var(--color-weak-60);
+  position: absolute;
+  right: var(--space-16);
+  top: var(--space-16);
+  z-index: 1;
+}
+
+.postCardMenuButton:focus,
+.postCardMenuButton:hover {
+  color: var(--color-primary-hover);
+}
+
+.postCardMenuIcon {
+  fill: currentcolor;
+  height: 20px;
+  width: 18px;
+}
+
+.postCardContainer {
+  padding: var(--space-16);
+  position: relative;
+}
+
+.postCardComment .postCardContainer {
+  padding: 0;
+}
+
+.userInfo {
+  align-items: center;
+  display: flex;
+  gap: var(--space-16);
+}
+
+.userInfo > span {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.postCardComment .userInfo > span {
+  height: 40px;
+  width: 40px;
+}
+
+.userInfoName {
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.postCardComment .userInfoName {
+  font-size: 16px;
+}
+
+.userInfoTime {
+  color: var(--color-weak-60);
+  font-size: 12px;
+}
+
+.postBody {
+  padding: var(--space-16) 0 var(--space-12);
+}
+
+.postCopy {
+  color: var(--color-weak-60);
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .postCardContainer {
+    padding: var(--space-30);
+  }
+}

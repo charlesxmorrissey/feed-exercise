@@ -1,0 +1,20 @@
+.borderedCard {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  margin-bottom: var(--space-16);
+}
+
+.layoutPadding {
+  padding: 0 var(--space-16);
+}
+
+.transitionHover {
+  transition: color var(--transition--timing-2) var(--transition--ease),
+    fill var(--transition--timing-2) var(--transition--ease);
+}
+
+@media (min-width: 768px) {
+  .layoutPadding {
+    padding: 0 var(--space-32);
+  }
+}
