@@ -28,11 +28,11 @@ interface Props {
   variant?: PostCardVariant
 }
 
-export const PostCard: React.FC<Props> = ({
+export const PostCard = ({
   cardData,
   comments,
   variant = PostCardVariant.default,
-}) => {
+}: Props) => {
   const { dispatch } = useFeedContext()
   const { createdAt, hype, id, text } = cardData
   const isDefaultVariant = variant === PostCardVariant.default

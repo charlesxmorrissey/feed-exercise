@@ -9,7 +9,7 @@ interface Props {
   postId: string
 }
 
-const PostComments: React.FC<Props> = ({ comments, postId }) => (
+const PostComments = ({ comments, postId }: Props) => (
   <>
     <PostCommentForm postId={postId} />
 

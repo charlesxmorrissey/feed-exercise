@@ -12,7 +12,7 @@ interface Props {
   postId: string
 }
 
-const PostCommentForm: React.FC<Props> = ({ postId }) => {
+const PostCommentForm = ({ postId }: Props) => {
   const { dispatch } = useFeedContext()
   const [isSubmitButtonDisabled, setIsSubmitButtonDisabled] =
     useState<boolean>(true)

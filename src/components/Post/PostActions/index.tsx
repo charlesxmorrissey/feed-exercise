@@ -13,7 +13,7 @@ interface Props {
   onClickLike: () => void
 }
 
-const PostActions: React.FC<Props> = ({ comments, isLiked, onClickLike }) => (
+const PostActions = ({ comments, isLiked, onClickLike }: Props) => (
   <ul className={styles.postActions}>
     <li className={styles.postActionItem}>
       <button

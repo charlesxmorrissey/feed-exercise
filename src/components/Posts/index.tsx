@@ -2,7 +2,7 @@ import { PostCard } from 'components/Post/PostCard'
 import PostForm from 'components/Post/PostForm'
 import { useFeedContext } from 'hooks'
 
-const Posts: React.FC = () => {
+const Posts = () => {
   const { state } = useFeedContext()
 
   return (

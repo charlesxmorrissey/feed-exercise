@@ -20,7 +20,7 @@ const rootReducer = ({ posts }: InitialStateType, action: PostActions) => ({
   posts: feedReducer(posts, action),
 })
 
-export const FeedProvider: React.FC<Props> = ({ children }) => {
+export const FeedProvider = ({ children }: Props) => {
   const [state, dispatch] = useReducer(rootReducer, initialState)
 
   return (

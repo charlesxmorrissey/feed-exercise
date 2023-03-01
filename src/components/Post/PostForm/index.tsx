@@ -8,7 +8,7 @@ import { useFeedContext } from 'hooks'
 
 import styles from './PostForm.module.css'
 
-const PostForm: React.FC = () => {
+const PostForm = () => {
   const { dispatch } = useFeedContext()
   const [isSubmitButtonDisabled, setIsSubmitButtonDisabled] =
     useState<boolean>(true)
